@@ -1,0 +1,26 @@
+
+---
+
+## 📦 **requirements.txt**
+
+```text
+# Core dependencies
+pandas==2.2.3
+numpy==2.1.2
+scikit-learn==1.5.2
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+plotly==5.24.1
+
+# Dashboard
+streamlit==1.39.0
+
+# Data handling and utilities
+joblib==1.4.2
+
+# Optional: for Jupyter Notebooks
+notebook==7.2.2
+jupyterlab==4.2.5
+

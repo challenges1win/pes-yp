@@ -1,0 +1,46 @@
+{
+  "project": "Predictive Maintenance AI Cloud Database",
+  "version": "1.0",
+  "collections": {
+    "sensors": "sensors_data",
+    "labels": "labeled_anomalies",
+    "models": "trained_models"
+  },
+  "sensors_data": {
+    "fields": {
+      "time": "Timestamp",
+      "sensor_type": "String",
+      "temperature": "Float",
+      "vibration": "Float",
+      "voltage": "Float",
+      "current": "Float",
+      "load_current": "Float",
+      "partial_discharge": "Float",
+      "SoC": "Float",
+      "efficiency": "Float",
+      "fault_code": "Integer",
+      "anomaly": "Boolean"
+    }
+  },
+  "labeled_anomalies": {
+    "fields": {
+      "time": "Timestamp",
+      "sensor": "String",
+      "iso_score": "Float",
+      "label": "Integer",
+      "comment": "String",
+      "created_at": "Timestamp",
+      "uploaded_at": "Timestamp"
+    }
+  },
+  "trained_models": {
+    "fields": {
+      "model_name": "String",
+      "sensor": "String",
+      "version": "String",
+      "trained_on": "Timestamp",
+      "f1_score": "Float",
+      "path": "String"
+    }
+  }
+}
